@@ -10,6 +10,7 @@
 string PrepareForDisplay(int values[], int size, char separator)
 {
     stringstream display;
+    
     display<<values[0];
     for (int i=1; i<size; i++)
     {
