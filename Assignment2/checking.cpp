@@ -1,5 +1,7 @@
 #include "checking.h"
 
+Checking::Checking();
+
 Checking::Checking(float balance, float interest, string pin, bool overdraft)
 {
     setBalance(balance);
@@ -35,7 +37,7 @@ void Checking::withdraw(float amount)
         while (over != 'Y' && over != 'N')
         {
             cout<<"Enter Y for yes or N for no\n";
-            cin>>over
+            cin>>over;
         }
         switch (over)
         {

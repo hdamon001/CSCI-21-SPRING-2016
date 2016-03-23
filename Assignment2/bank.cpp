@@ -1,5 +1,10 @@
 #include "bank.h"
 
+Bank::Bank()
+{
+    
+}
+
 Bank::Bank(float balance, float interest, string pin)
 {
     balance_=balance;

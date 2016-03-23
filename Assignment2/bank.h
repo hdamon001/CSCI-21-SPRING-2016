@@ -18,6 +18,7 @@ using namespace std;
 class Bank
 {
     public:
+     Bank();
      Bank(float balance = 0.00, float interest = 0.00, string pin = "0000");
      virtual ~Bank();
      void setBalance(float balance);

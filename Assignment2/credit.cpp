@@ -1,5 +1,10 @@
 #include "credit.h"
 
+Credit::Credit()
+{
+    
+}
+
 Credit::Credit(float balance, float interest, string pin, bool paid)
 {
     setBalance(balance);
@@ -25,7 +30,7 @@ bool Credit::getPaid()
 
 void Credit::withdraw(float amount)
 {
-    balance=getBalance() - amount;
+    float balance=getBalance() - amount;
     setBalance(balance);
 }
 
@@ -38,10 +43,10 @@ void Credit::pay(float amount)
     }
 }
 
-String accInfo()
+string Credit::accInfo()
 {
     stringstream info;
-    if (paid==false)
+    if (getPaid()==false)
     {
         float amount = abs(getBalance()) * (1 + getInterest()/12);
         info<<"Balance:\n$"<<getBalance()<<"\nInterest Rate:\n"<<getInterest()<<"\nAmount Owed:\n$"<<amount<<endl;

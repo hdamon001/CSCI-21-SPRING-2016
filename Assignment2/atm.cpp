@@ -3,11 +3,6 @@
 #include "credit.h"
 #include "savings.h"
 
-#include "bank.h"
-#include "checking.h"
-#include "credit.h"
-#include "savings.h"
-
 
 int ATM()
 {

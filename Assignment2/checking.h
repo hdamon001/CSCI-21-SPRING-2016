@@ -6,6 +6,7 @@
 class Checking: public Bank
 {
     public:
+     Checking();
      Checking(float balance = 0.00, float interest = 0.00, string pin = "0000", bool overdraft = false);
      virtual ~Checking();
      void setOver(bool over);

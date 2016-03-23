@@ -6,6 +6,7 @@
 class Credit: public Bank
 {
     public:
+     Credit();
      Credit(float balance = 0.0, float interest = 0.0, string pin = "0000", bool paid = true);
      virtual ~Credit();
      void setPaid(bool paid);

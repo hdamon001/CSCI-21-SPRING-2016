@@ -6,7 +6,8 @@
 class Savings: public Bank
 {
     public:
-     Savings(float balance = 0.00, float interest = 0.00, string pin = "0000",  int withdrawals = 0);
+     Savings();
+     Savings(float balance = 0.00, float interest = 0.00, string pin = "0000", unsigned int withdrawals = 0);
      virtual ~Savings();
      void setWithdrawals(int withdrawals);
      int getWithdrawals();
@@ -15,7 +16,7 @@ class Savings: public Bank
      string accInfo();
      
     private:
-     int nwtihdrawals_;
+     int nwithdrawals_;
 };
 
 #endif

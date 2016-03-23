@@ -1,11 +1,16 @@
 #include "savings.h"
 
-Savings::Savings(float balance, float interest, string pin, int withdrawal)
+Savings()
+{
+    
+}
+
+Savings::Savings(float balance, float interest, string pin, unsigned int withdrawal)
 {
     setBalance(balance);
     setInterest(interest);
     setPin(pin);
-    withdrawal_=withdrawal;
+    nwithdrawals_=withdrawal;
 }
 
 Savings::~Savings()
@@ -15,17 +20,17 @@ Savings::~Savings()
 
 void Savings::setWithdrawals(int withdrawal)
 {
-    withdrawal_=withdrawal;
+    nwithdrawals_=withdrawal;
 }
 
-bool Savings::getWithdrawals()
+int Savings::getWithdrawals()
 {
-    return Withdrawal_;
+    return nwithdrawals_;
 }
 
 void Savings::withdraw(float amount)
 {
-    balance=getBalance() - amount;
+    float balance=getBalance() - amount;
     if (amount > getBalance())
     {
         cout<<"Insufficient Funds\n";
