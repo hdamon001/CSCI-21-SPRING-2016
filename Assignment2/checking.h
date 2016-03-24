@@ -3,7 +3,7 @@
 
 #include "bank.h"
 
-class Checking: public Bank
+public class Checking: public Bank
 {
     public:
      Checking();
