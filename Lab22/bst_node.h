@@ -9,7 +9,8 @@ CSCI 21
 
 #include <iostream>
 #include <string>
-#include <stringstream>
+#include <sstream>
+#include <cstdlib>
 
 using namespace std;
 
